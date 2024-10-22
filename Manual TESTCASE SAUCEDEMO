@@ -1,0 +1,32 @@
+Manual TESTCASE SAUCEDEMO
+
+Scenario : Login valid account
+Given open URL (https://www.saucedemo.com/v1/index.html)
+When user input valid username and valid password
+And click button login
+Then user succes login
+
+__________________________________________________________________
+Scenario : Login with invalid username
+Given open URL (https://www.saucedemo.com/v1/index.html)
+When user input invalid username 
+And valid password
+And click button login
+Then user can't login
+
+___________________________________________________________________
+Scenario : Login with invalid password
+Given open URL (https://www.saucedemo.com/v1/index.html)
+When user input valid username 
+And invalid password
+And click button login
+Then user can't login
+
+___________________________________________________________________
+Scenario : Login with invalid username and password
+Given open URL (https://www.saucedemo.com/v1/index.html)
+When user input invalid username 
+And invalid password
+And click button login
+Then user can't login
+
